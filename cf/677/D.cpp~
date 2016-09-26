@@ -1,0 +1,80 @@
+//sobskdrbhvk
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long int LL;
+typedef pair<int, int> pii;
+typedef pair<LL, LL> pll;
+
+#define PB push_back
+#define MP make_pair
+#define L first
+#define R second
+#define sz(x) ((int)(x).size())
+#define smax(x, y) ((x) = max((x), (y)))
+#define smin(x, y) ((x) = min((x), (y)))
+#define all(x) x.begin(),x.end()
+
+const int maxn = 500;
+const int maxnn = maxn * maxn;
+LL dis[maxnn];
+int a[maxn][maxn];
+vector<int> vec[maxnn];
+int n, m, p;
+int sou;
+vector<int> colvec[maxn];
+int ptr[maxn];
+LL row[maxnn], col[maxnn];
+
+LL Abs(LL x){return x < 0 ? -x : x;}
+
+LL dist(int v, int u){
+	return Abs(row[v] - row[u]) + Abs(col[v] - col[u]);
+}
+
+void relax(int v, int u){
+	smin(dis[u], dis[v] + dist(v, u));
+	return;
+}
+
+void dijkstra(void){
+	memset(dis, 127, sizeof dis);
+	dis[sou] = 0;
+	for(int val = p; val > 1; val--){
+		for(int j = 0; j < m; j++)
+			colvec[j].clear(), ptr[j] = 0;
+		for(auto pos : vec[val])
+			colvec[col[pos]].PB(row[pos]);
+		for(auto pos : vec[val - 1]){
+			for(int j = 0; j < m; j++){
+				while(ptr[j] < sz(colvec[j]) and colvec[j][ptr[j]] < row[pos]) ptr[j]++;
+				if(ptr[j] < sz(colvec[j])) relax(colvec[j][ptr[j]] * m + j, pos);
+				if(ptr[j] > 0) relax(colvec[j][ptr[j] - 1] * m + j, pos);
+				//for(int x = max(0, ptr[j] - 3); x <= min(sz(colvec[j]) - 1, ptr[j] + 3); x++)
+				//	relax(colvec[j][x] * m + j, pos);
+			}
+		}
+	}
+	return;
+}
+
+int main(){
+	scanf("%d%d%d", &n, &m, &p);
+	for(int i = 0; i < n; i++)
+		for(int j = 0; j < m; j++){
+			row[i * m + j] = i, col[i * m + j] = j;
+			scanf("%d", a[i] + j);
+			vec[a[i][j]].PB(i * m + j);
+			if(a[i][j] == p)
+				sou = i * m + j;
+		}
+	dijkstra();
+	LL ans = dis[maxnn - 1];
+	for(int i = 0; i < n; i++)
+		for(int j = 0; j < m; j++)
+			if(a[i][j] == 1)
+				smin(ans, dis[i * m + j] + i + j);
+	printf("%I64d\n", ans);
+	return 0;
+}
