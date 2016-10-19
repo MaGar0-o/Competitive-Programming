@@ -4,6 +4,7 @@
 using namespace std;
 
 typedef long long int LL;
+typedef long double LD;
 typedef pair<int, int> pii;
 typedef pair<LL, LL> pll;
 
@@ -17,22 +18,35 @@ typedef pair<LL, LL> pll;
 #define all(x) x.begin(),x.end()
 
 const int maxn = 1e5 + 85 - 69;
-vector<LL> all;
+vector<LL> tim;
 LL sum[maxn],
-   sumc[maxn],
    d[maxn],
-   tim[maxn],
-   cnt[maxn],
    dp[2][maxn],
-   badval;
-int n, m, p, cur, pre;
+   badval,
+   stc[maxn];
+int n, m, p, cur, pre, ptr, sz;
 
-LL func(int ptr, int j){
-	LL ret = dp[pre][ptr];
-	for(int i = j; i > ptr; i--)
-		ret += (all[j] - all[i]) * cnt[i];
-	return ret;
-	return dp[pre][ptr] + (sumc[j + 1] - sumc[ptr + 1]) * all[j] - (sum[j + 1] - sum[ptr + 1]);
+LD inters(int id1, int id2){
+	LD b1 = sum[id1 + 1] + dp[pre][id1], b2 = sum[id2 + 1] + dp[pre][id2];
+	return (b1 - b2) / (id1 - id2);
+}
+
+void add(int id){
+	while(sz >= 2 and inters(stc[sz - 1], stc[sz - 2]) > inters(stc[sz - 1], id))
+		sz--;
+	if(sz <= ptr) ptr = sz;
+	stc[sz++] = id;
+	return;
+}
+
+LL get(LL pos){
+	LD tmp = pos;
+	while(ptr + 1 < sz and inters(stc[ptr], stc[ptr + 1]) < tmp)
+		ptr++;
+	while(ptr and inters(stc[ptr], stc[ptr - 1]) > tmp)
+		ptr--;
+	LL id = stc[ptr];
+	return -id * pos + (sum[id + 1] + dp[pre][id]);
 }
 
 int main(){
@@ -48,35 +62,23 @@ int main(){
 		cin >> fi >> se;
 		fi--;
 		se -= d[fi];
-		if(se < 0)
-			badval += -se, se = 0;
-		tim[i] = se;
-		all.PB(se);
+		tim.PB(se);
 	}
-	all.PB(0);
-	sort(all(all));
-	all.resize(unique(all(all)) - all.begin());
-	for(int i = 0; i < m; i++)
-		cnt[lower_bound(all(all), tim[i]) - all.begin()]++;
-	for(int i = 0; i < sz(all); i++){
-		sum[i + 1] = sum[i] + cnt[i] * all[i];
-		sumc[i + 1] = sumc[i] + cnt[i];
-	}
+	sort(all(tim));
+	for(int i = 0; i < sz(tim); i++)
+		sum[i + 1] = sum[i] + tim[i];
 	memset(dp, 63, sizeof dp);
 	cur = 0, pre = 1;
-	dp[cur][0] = 0;
 	for(int i = 1; i <= p; i++){
-		swap(cur, pre);
+		swap(pre, cur);
 		memset(dp[cur], 63, sizeof dp[cur]);
-		int ptr = 0;
-		for(int j = 0; j < sz(all); j++){
-			/*while(ptr + 1 <= j and func(ptr + 1, j) <= func(ptr, j))
-				++ptr;
-			dp[cur][j] = func(ptr, j);*/
-			for(int k = 0; k <= j; k++)
-				smin(dp[cur][j], func(k, j));
+		ptr = sz = 0;
+		for(int j = 0; j < sz(tim); j++){
+			dp[cur][j] = (j + 1) * tim[j] - sum[j + 1];
+			add(j);
+			smin(dp[cur][j], j * tim[j] - sum[j + 1] + get(tim[j]));
 		}
 	}
-	cout << badval + dp[cur][sz(all) - 1] << '\n';
+	cout << dp[cur][sz(tim) - 1] << '\n';
 	return 0;
 }
