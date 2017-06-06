@@ -1,4 +1,5 @@
 //sobskdrbhvk
+//remember the flying, the bird dies ):(
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -19,14 +20,18 @@ typedef pair<LL, LL> pll;
 int main(){
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
-	cin >> n;
-	for(int i = 0; i < n*2-1; i++){
+	int n, len;
+	cin >> n, len = 2 * n - 1;
+	int a[len], sum = 0;
+	int neg = 0;
+	for(int i = 0; i < len; i++){
 		cin >> a[i];
-		sum[i + 1] = sum[i] + a[i];
+		if(a[i] < 0) a[i] = -a[i], neg++;
+		sum += a[i];
 	}
-	for(int i = n - 1; i >= 0; i--){
-		for(int j = i + 1; j <= n; j++)
-			smax(dp[i], dp[j] + 
-	}
+	if((n&1) or !(neg&1))
+		cout << sum << endl;
+	else
+		cout << sum - 2**min_element(a, a + len) << endl;
 	return 0;
 }

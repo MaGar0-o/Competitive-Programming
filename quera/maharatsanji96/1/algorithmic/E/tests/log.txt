@@ -1,0 +1,529 @@
+Testing 0:
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Files ./out/output0.txt and ./out/naout0.txt differ
+Testing 1:
+
+real	0m0.121s
+user	0m0.120s
+sys	0m0.000s
+Testing 2:
+
+real	0m0.026s
+user	0m0.024s
+sys	0m0.000s
+Files ./out/output2.txt and ./out/naout2.txt differ
+Testing 3:
+
+real	0m0.002s
+user	0m0.004s
+sys	0m0.000s
+Testing 4:
+
+real	0m45.956s
+user	0m45.884s
+sys	0m0.000s
+Testing 5:
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+Testing 6:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 7:
+
+real	0m0.075s
+user	0m0.072s
+sys	0m0.000s
+Testing 8:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 9:
+
+real	0m3.352s
+user	0m3.348s
+sys	0m0.000s
+Testing 10:
+
+real	0m0.036s
+user	0m0.032s
+sys	0m0.000s
+Files ./out/output10.txt and ./out/naout10.txt differ
+Testing 11:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.004s
+Testing 12:
+
+real	0m6.538s
+user	0m6.520s
+sys	0m0.000s
+Files ./out/output12.txt and ./out/naout12.txt differ
+Testing 13:
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.000s
+Testing 14:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 15:
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.000s
+Testing 16:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 17:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 18:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Files ./out/output18.txt and ./out/naout18.txt differ
+Testing 19:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 20:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 21:
+
+real	0m1.076s
+user	0m1.072s
+sys	0m0.000s
+Files ./out/output21.txt and ./out/naout21.txt differ
+Testing 22:
+
+real	1m18.215s
+user	1m18.140s
+sys	0m0.004s
+Files ./out/output22.txt and ./out/naout22.txt differ
+Testing 23:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.004s
+Testing 24:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 25:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 26:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 27:
+
+real	0m0.015s
+user	0m0.012s
+sys	0m0.000s
+Files ./out/output27.txt and ./out/naout27.txt differ
+Testing 28:
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.000s
+Testing 29:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 30:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Files ./out/output30.txt and ./out/naout30.txt differ
+Testing 31:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 32:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 33:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 34:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 35:
+
+real	0m15.763s
+user	0m15.760s
+sys	0m0.000s
+Files ./out/output35.txt and ./out/naout35.txt differ
+Testing 36:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 37:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 38:
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+Testing 39:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Files ./out/output39.txt and ./out/naout39.txt differ
+Testing 40:
+
+real	0m1.531s
+user	0m1.528s
+sys	0m0.000s
+Files ./out/output40.txt and ./out/naout40.txt differ
+Testing 41:
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.000s
+Files ./out/output41.txt and ./out/naout41.txt differ
+Testing 42:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 43:
+
+real	0m0.083s
+user	0m0.080s
+sys	0m0.000s
+Testing 44:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 45:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 46:
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Testing 47:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.004s
+Testing 48:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Files ./out/output48.txt and ./out/naout48.txt differ
+Testing 49:
+
+real	0m0.008s
+user	0m0.004s
+sys	0m0.000s
+Testing 50:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 51:
+
+real	0m0.050s
+user	0m0.048s
+sys	0m0.000s
+Files ./out/output51.txt and ./out/naout51.txt differ
+Testing 52:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.004s
+Testing 53:
+
+real	0m0.737s
+user	0m0.736s
+sys	0m0.000s
+Files ./out/output53.txt and ./out/naout53.txt differ
+Testing 54:
+
+real	0m0.449s
+user	0m0.448s
+sys	0m0.000s
+Files ./out/output54.txt and ./out/naout54.txt differ
+Testing 55:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 56:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.004s
+Testing 57:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 58:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 59:
+
+real	0m17.490s
+user	0m17.472s
+sys	0m0.016s
+Testing 60:
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.004s
+Testing 61:
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.000s
+Testing 62:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 63:
+
+real	0m0.010s
+user	0m0.008s
+sys	0m0.000s
+Testing 64:
+
+real	0m0.113s
+user	0m0.112s
+sys	0m0.000s
+Files ./out/output64.txt and ./out/naout64.txt differ
+Testing 65:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 66:
+
+real	0m0.301s
+user	0m0.300s
+sys	0m0.000s
+Files ./out/output66.txt and ./out/naout66.txt differ
+Testing 67:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Files ./out/output67.txt and ./out/naout67.txt differ
+Testing 68:
+
+real	3m29.888s
+user	3m29.872s
+sys	0m0.000s
+Testing 69:
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Testing 70:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 71:
+
+real	0m0.015s
+user	0m0.012s
+sys	0m0.000s
+Files ./out/output71.txt and ./out/naout71.txt differ
+Testing 72:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.004s
+Testing 73:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 74:
+
+real	0m0.129s
+user	0m0.128s
+sys	0m0.000s
+Files ./out/output74.txt and ./out/naout74.txt differ
+Testing 75:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 76:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 77:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 78:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 79:
+
+real	0m0.196s
+user	0m0.188s
+sys	0m0.004s
+Files ./out/output79.txt and ./out/naout79.txt differ
+Testing 80:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 81:
+
+real	0m12.837s
+user	0m12.796s
+sys	0m0.036s
+Testing 82:
+
+real	0m0.133s
+user	0m0.128s
+sys	0m0.000s
+Files ./out/output82.txt and ./out/naout82.txt differ
+Testing 83:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 84:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 85:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Files ./out/output85.txt and ./out/naout85.txt differ
+Testing 86:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 87:
+
+real	0m3.903s
+user	0m3.900s
+sys	0m0.000s
+Files ./out/output87.txt and ./out/naout87.txt differ
+Testing 88:
+
+real	0m0.013s
+user	0m0.012s
+sys	0m0.000s
+Testing 89:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 90:
+
+real	0m0.025s
+user	0m0.024s
+sys	0m0.000s
+Files ./out/output90.txt and ./out/naout90.txt differ
+Testing 91:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 92:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 93:
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.000s
+Files ./out/output93.txt and ./out/naout93.txt differ
+Testing 94:
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+Testing 95:
+
+real	0m2.916s
+user	0m2.912s
+sys	0m0.004s
+Files ./out/output95.txt and ./out/naout95.txt differ
+Testing 96:
+
+real	0m0.010s
+user	0m0.008s
+sys	0m0.000s
+Testing 97:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s
+Testing 98:
+
+real	0m0.008s
+user	0m0.004s
+sys	0m0.000s
+Testing 99:
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.000s

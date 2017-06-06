@@ -1,0 +1,73 @@
+F.cpp: In function ‘void dfs(int)’:
+F.cpp:59:21: error: no matching function for call to ‘std::vector<int>::insert(int&)’
+  ver[comsz].insert(u);
+                     ^
+In file included from /usr/include/c++/6/vector:69:0,
+                 from /usr/include/c++/6/queue:61,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:86,
+                 from F.cpp:3:
+/usr/include/c++/6/bits/vector.tcc:107:5: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::value_type = int]
+     vector<_Tp, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/6/bits/vector.tcc:107:5: note:   candidate expects 2 arguments, 1 provided
+In file included from /usr/include/c++/6/vector:64:0,
+                 from /usr/include/c++/6/queue:61,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:86,
+                 from F.cpp:3:
+/usr/include/c++/6/bits/stl_vector.h:1015:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::value_type = int]
+       insert(const_iterator __position, value_type&& __x)
+       ^~~~~~
+/usr/include/c++/6/bits/stl_vector.h:1015:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/6/bits/stl_vector.h:1032:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]
+       insert(const_iterator __position, initializer_list<value_type> __l)
+       ^~~~~~
+/usr/include/c++/6/bits/stl_vector.h:1032:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/6/bits/stl_vector.h:1052:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::size_type, const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = int]
+       insert(const_iterator __position, size_type __n, const value_type& __x)
+       ^~~~~~
+/usr/include/c++/6/bits/stl_vector.h:1052:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/6/bits/stl_vector.h:1096:9: note: candidate: template<class _InputIterator, class> std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, _InputIterator, _InputIterator) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = int; _Alloc = std::allocator<int>]
+         insert(const_iterator __position, _InputIterator __first,
+         ^~~~~~
+/usr/include/c++/6/bits/stl_vector.h:1096:9: note:   template argument deduction/substitution failed:
+F.cpp:59:21: note:   candidate expects 3 arguments, 1 provided
+  ver[comsz].insert(u);
+                     ^
+F.cpp:60:21: error: no matching function for call to ‘std::vector<int>::insert(int&)’
+  ver[comsz].insert(v);
+                     ^
+In file included from /usr/include/c++/6/vector:69:0,
+                 from /usr/include/c++/6/queue:61,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:86,
+                 from F.cpp:3:
+/usr/include/c++/6/bits/vector.tcc:107:5: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::value_type = int]
+     vector<_Tp, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/6/bits/vector.tcc:107:5: note:   candidate expects 2 arguments, 1 provided
+In file included from /usr/include/c++/6/vector:64:0,
+                 from /usr/include/c++/6/queue:61,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:86,
+                 from F.cpp:3:
+/usr/include/c++/6/bits/stl_vector.h:1015:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::value_type = int]
+       insert(const_iterator __position, value_type&& __x)
+       ^~~~~~
+/usr/include/c++/6/bits/stl_vector.h:1015:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/6/bits/stl_vector.h:1032:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]
+       insert(const_iterator __position, initializer_list<value_type> __l)
+       ^~~~~~
+/usr/include/c++/6/bits/stl_vector.h:1032:7: note:   candidate expects 2 arguments, 1 provided
+/usr/include/c++/6/bits/stl_vector.h:1052:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::size_type, const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = int]
+       insert(const_iterator __position, size_type __n, const value_type& __x)
+       ^~~~~~
+/usr/include/c++/6/bits/stl_vector.h:1052:7: note:   candidate expects 3 arguments, 1 provided
+/usr/include/c++/6/bits/stl_vector.h:1096:9: note: candidate: template<class _InputIterator, class> std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, _InputIterator, _InputIterator) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = int; _Alloc = std::allocator<int>]
+         insert(const_iterator __position, _InputIterator __first,
+         ^~~~~~
+/usr/include/c++/6/bits/stl_vector.h:1096:9: note:   template argument deduction/substitution failed:
+F.cpp:60:21: note:   candidate expects 3 arguments, 1 provided
+  ver[comsz].insert(v);
+                     ^
+F.cpp: In function ‘int main()’:
+F.cpp:96:23: warning: ignoring return value of ‘int scanf(const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  scanf("%d%d", &n, &k);
+                       ^

@@ -1,0 +1,50 @@
+//sobskdrbhvk
+//remember the flying, the bird dies ):(
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long int LL;
+typedef pair<int, int> pii;
+typedef pair<LL, LL> pll;
+
+#define PB push_back
+#define MP make_pair
+#define L first
+#define R second
+#define sz(x) ((int)(x).size())
+#define smax(x, y) ((x) = max((x), (y)))
+#define smin(x, y) ((x) = min((x), (y)))
+#define all(x) x.begin(),x.end()
+#define gotohell {cout << -1 << '\n'; return(0);}
+#define cos cost
+
+const int maxn = 2e2 + 10,
+	  maxe = 4e4 + 100;
+const LL Mab = 2e8;
+LL cos[maxe],
+   dis[maxn];
+int par[maxn],
+	too[maxe],
+	cap[maxe],
+	prv[maxe],
+	hed[maxn],
+	e, sou, syn;
+bool neces[maxn],
+	 inq[maxn];
+queue<int> q;
+vector<pll> adj[maxn];
+
+void adde(int u, int v, LL cos = 0, int uv = 1, int vu = 0){
+	too[e] = v, cap[e] = uv, ::cos[e] = +cos, prv[e] = hed[u], hed[u] = e++;
+	too[e] = u, cap[e] = vu, ::cos[e] = -cos, prv[e] = hed[v], hed[v] = e++;
+}
+
+void spfa(void){
+	memset(dis, +63, sizeof dis);
+	memset(par, -1, sizeof par);
+	memset(inq, 0, sizeof inq);
+	dis[sou] = 0;
+	q.push(sou);
+	inq[sou] = true;
+	while(sz(q)){

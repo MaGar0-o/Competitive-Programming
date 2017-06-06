@@ -1,0 +1,7 @@
+<html><head></head><body>
+	<form target="blank" action="http://localhost:9999/forum/topic/add" method="post">
+  {% csrf_token %}
+  <input name="title" type="text">
+  <input name="rev_order" type="text">
+  <input type="submit" name="submit">
+</form></body></html>

@@ -1,0 +1,802 @@
+C.cpp: In function ‘int main()’:
+C.cpp:35:9: error: no match for ‘operator==’ (operand types are ‘int’ and ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’)
+   if(it == st[sid].end()) it = st[sid].begin();
+      ~~~^~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/6/regex:62:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:110,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/regex.h:940:5: note: candidate: template<class _BiIter> bool std::__cxx11::operator==(const std::__cxx11::sub_match<_BiIter>&, const std::__cxx11::sub_match<_BiIter>&)
+     operator==(const sub_match<_BiIter>& __lhs, const sub_match<_BiIter>& __rhs)
+     ^~~~~~~~
+/usr/include/c++/6/bits/regex.h:940:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__cxx11::sub_match<_BiIter>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/regex:62:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:110,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/regex.h:1013:5: note: candidate: template<class _Bi_iter, class _Ch_traits, class _Ch_alloc> bool std::__cxx11::operator==(std::__cxx11::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>&, const std::__cxx11::sub_match<_BiIter>&)
+     operator==(const __sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/regex.h:1013:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘std::__cxx11::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/regex:62:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:110,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/regex.h:1093:5: note: candidate: template<class _Bi_iter, class _Ch_traits, class _Ch_alloc> bool std::__cxx11::operator==(const std::__cxx11::sub_match<_BiIter>&, std::__cxx11::__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>&)
+     operator==(const sub_match<_Bi_iter>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/regex.h:1093:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__cxx11::sub_match<_BiIter>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/regex:62:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:110,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/regex.h:1173:5: note: candidate: template<class _Bi_iter> bool std::__cxx11::operator==(const typename std::iterator_traits<_Iter>::value_type*, const std::__cxx11::sub_match<_BiIter>&)
+     operator==(typename iterator_traits<_Bi_iter>::value_type const* __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/regex.h:1173:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ is not derived from ‘const std::__cxx11::sub_match<_BiIter>’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/regex:62:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:110,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/regex.h:1247:5: note: candidate: template<class _Bi_iter> bool std::__cxx11::operator==(const std::__cxx11::sub_match<_BiIter>&, const typename std::iterator_traits<_Iter>::value_type*)
+     operator==(const sub_match<_Bi_iter>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/regex.h:1247:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__cxx11::sub_match<_BiIter>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/regex:62:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:110,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/regex.h:1321:5: note: candidate: template<class _Bi_iter> bool std::__cxx11::operator==(const typename std::iterator_traits<_Iter>::value_type&, const std::__cxx11::sub_match<_BiIter>&)
+     operator==(typename iterator_traits<_Bi_iter>::value_type const& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/regex.h:1321:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ is not derived from ‘const std::__cxx11::sub_match<_BiIter>’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/regex:62:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:110,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/regex.h:1401:5: note: candidate: template<class _Bi_iter> bool std::__cxx11::operator==(const std::__cxx11::sub_match<_BiIter>&, const typename std::iterator_traits<_Iter>::value_type&)
+     operator==(const sub_match<_Bi_iter>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/regex.h:1401:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__cxx11::sub_match<_BiIter>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/regex:62:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:110,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/regex.h:1920:5: note: candidate: template<class _Bi_iter, class _Alloc> bool std::__cxx11::operator==(const std::__cxx11::match_results<_BiIter, _Alloc>&, const std::__cxx11::match_results<_BiIter, _Alloc>&)
+     operator==(const match_results<_Bi_iter, _Alloc>& __m1,
+     ^~~~~~~~
+/usr/include/c++/6/bits/regex.h:1920:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__cxx11::match_results<_BiIter, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/iosfwd:40:0,
+                 from /usr/include/c++/6/ios:38,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/postypes.h:216:5: note: candidate: template<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^~~~~~~~
+/usr/include/c++/6/bits/postypes.h:216:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::fpos<_StateT>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_pair.h:431:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_pair.h:431:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::pair<_T1, _T2>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_iterator.h:292:5: note: candidate: template<class _Iterator> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator==(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:292:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_iterator.h:349:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator==(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:349:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::reverse_iterator<_Iterator>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_iterator.h:1113:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator==(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:1113:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/6/bits/char_traits.h:39,
+                 from /usr/include/c++/6/ios:40,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_iterator.h:1119:5: note: candidate: template<class _Iterator> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator==(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_iterator.h:1119:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::move_iterator<_IteratorL>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/string:41:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/allocator.h:133:5: note: candidate: template<class _T1, class _T2> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator==(const allocator<_T1>&, const allocator<_T2>&)
+     ^~~~~~~~
+/usr/include/c++/6/bits/allocator.h:133:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::allocator<_CharT>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/string:41:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/allocator.h:139:5: note: candidate: template<class _Tp> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator==(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^~~~~~~~
+/usr/include/c++/6/bits/allocator.h:139:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::allocator<_CharT>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/basic_string.h:5050:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:5050:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/basic_string.h:5058:5: note: candidate: template<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)
+     operator==(const basic_string<_CharT>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:5058:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/basic_string.h:5072:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator==(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:5072:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const _CharT*’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/string:52:0,
+                 from /usr/include/c++/6/bits/locale_classes.h:40,
+                 from /usr/include/c++/6/bits/ios_base.h:41,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/basic_string.h:5084:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/6/bits/basic_string.h:5084:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/ios_base.h:46:0,
+                 from /usr/include/c++/6/ios:42,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/system_error:284:3: note: candidate: bool std::operator==(const std::error_code&, const std::error_code&)
+   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/6/system_error:284:3: note:   no known conversion for argument 1 from ‘int’ to ‘const std::error_code&’
+/usr/include/c++/6/system_error:289:3: note: candidate: bool std::operator==(const std::error_code&, const std::error_condition&)
+   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/6/system_error:289:3: note:   no known conversion for argument 1 from ‘int’ to ‘const std::error_code&’
+/usr/include/c++/6/system_error:296:3: note: candidate: bool std::operator==(const std::error_condition&, const std::error_code&)
+   operator==(const error_condition& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/6/system_error:296:3: note:   no known conversion for argument 1 from ‘int’ to ‘const std::error_condition&’
+/usr/include/c++/6/system_error:303:3: note: candidate: bool std::operator==(const std::error_condition&, const std::error_condition&)
+   operator==(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/6/system_error:303:3: note:   no known conversion for argument 1 from ‘int’ to ‘const std::error_condition&’
+In file included from /usr/include/c++/6/bits/locale_facets.h:48:0,
+                 from /usr/include/c++/6/bits/basic_ios.h:37,
+                 from /usr/include/c++/6/ios:44,
+                 from /usr/include/c++/6/istream:38,
+                 from /usr/include/c++/6/sstream:38,
+                 from /usr/include/c++/6/complex:45,
+                 from /usr/include/c++/6/ccomplex:39,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/streambuf_iterator.h:204:5: note: candidate: template<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^~~~~~~~
+/usr/include/c++/6/bits/streambuf_iterator.h:204:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::istreambuf_iterator<_CharT, _Traits>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/ccomplex:39:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/complex:458:5: note: candidate: template<class _Tp> constexpr bool std::operator==(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator==(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/complex:458:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/ccomplex:39:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/complex:463:5: note: candidate: template<class _Tp> constexpr bool std::operator==(const std::complex<_Tp>&, const _Tp&)
+     operator==(const complex<_Tp>& __x, const _Tp& __y)
+     ^~~~~~~~
+/usr/include/c++/6/complex:463:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::complex<_Tp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/ccomplex:39:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:52,
+                 from C.cpp:3:
+/usr/include/c++/6/complex:468:5: note: candidate: template<class _Tp> constexpr bool std::operator==(const _Tp&, const std::complex<_Tp>&)
+     operator==(const _Tp& __x, const complex<_Tp>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/complex:468:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ is not derived from ‘const std::complex<_Tp>’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/deque:64:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:68,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_deque.h:265:5: note: candidate: template<class _Tp, class _Ref, class _Ptr> bool std::operator==(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator==(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_deque.h:265:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/deque:64:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:68,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_deque.h:272:5: note: candidate: template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator==(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)
+     operator==(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_deque.h:272:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::_Deque_iterator<_Tp, _Ref, _Ptr>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/deque:64:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:68,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_deque.h:2220:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator==(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)
+     operator==(const deque<_Tp, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_deque.h:2220:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::deque<_Tp, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/tuple:39:0,
+                 from /usr/include/c++/6/functional:55,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:71,
+                 from C.cpp:3:
+/usr/include/c++/6/array:241:5: note: candidate: template<class _Tp, long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^~~~~~~~
+/usr/include/c++/6/array:241:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::array<_Tp, _Nm>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/functional:55:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:71,
+                 from C.cpp:3:
+/usr/include/c++/6/tuple:1337:5: note: candidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Elements ...>&, const std::tuple<_Elements ...>&)
+     operator==(const tuple<_TElements...>& __t,
+     ^~~~~~~~
+/usr/include/c++/6/tuple:1337:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::tuple<_Elements ...>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:71:0,
+                 from C.cpp:3:
+/usr/include/c++/6/functional:2202:5: note: candidate: template<class _Res, class ... _Args> bool std::operator==(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)
+     operator==(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+     ^~~~~~~~
+/usr/include/c++/6/functional:2202:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::function<_Res(_ArgTypes ...)>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:71:0,
+                 from C.cpp:3:
+/usr/include/c++/6/functional:2208:5: note: candidate: template<class _Res, class ... _Args> bool std::operator==(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)
+     operator==(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+     ^~~~~~~~
+/usr/include/c++/6/functional:2208:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ is not derived from ‘const std::function<_Res(_ArgTypes ...)>’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/6/locale:43,
+                 from /usr/include/c++/6/iomanip:43,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:72,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/unique_ptr.h:646:5: note: candidate: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator==(const unique_ptr<_Tp, _Dp>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/unique_ptr.h:646:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/6/locale:43,
+                 from /usr/include/c++/6/iomanip:43,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:72,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/unique_ptr.h:652:5: note: candidate: template<class _Tp, class _Dp> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     ^~~~~~~~
+/usr/include/c++/6/bits/unique_ptr.h:652:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::unique_ptr<_Tp, _Dp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/locale_conv.h:41:0,
+                 from /usr/include/c++/6/locale:43,
+                 from /usr/include/c++/6/iomanip:43,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:72,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/unique_ptr.h:657:5: note: candidate: template<class _Tp, class _Dp> bool std::operator==(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     ^~~~~~~~
+/usr/include/c++/6/bits/unique_ptr.h:657:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ is not derived from ‘const std::unique_ptr<_Tp, _Dp>’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/iterator:66:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:77,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stream_iterator.h:130:5: note: candidate: template<class _Tp, class _CharT, class _Traits, class _Dist> bool std::operator==(const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&, const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&)
+     operator==(const istream_iterator<_Tp, _CharT, _Traits, _Dist>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stream_iterator.h:130:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/list:63:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:79,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_list.h:287:5: note: candidate: template<class _Val> bool std::operator==(const std::_List_iterator<_Tp>&, const std::_List_const_iterator<_Tp>&)
+     operator==(const _List_iterator<_Val>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_list.h:287:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::_List_iterator<_Tp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/list:63:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:79,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_list.h:1853:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator==(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)
+     operator==(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_list.h:1853:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__cxx11::list<_Tp, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/map:60:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:81,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_tree.h:328:5: note: candidate: template<class _Val> bool std::operator==(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)
+     operator==(const _Rb_tree_iterator<_Val>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:328:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::_Rb_tree_iterator<_Tp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/map:60:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:81,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_tree.h:1282:5: note: candidate: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator==(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator==(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_tree.h:1282:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/map:61:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:81,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_map.h:1307:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_map.h:1307:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::map<_Key, _Tp, _Compare, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/map:62:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:81,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_multimap.h:972:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_multimap.h:972:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/6/memory:82,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:82,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/shared_ptr_base.h:1186:5: note: candidate: template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)
+     operator==(const __shared_ptr<_Tp1, _Lp>& __a,
+     ^~~~~~~~
+/usr/include/c++/6/bits/shared_ptr_base.h:1186:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__shared_ptr<_Tp1, _Lp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/6/memory:82,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:82,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/shared_ptr_base.h:1192:5: note: candidate: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)
+     operator==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+     ^~~~~~~~
+/usr/include/c++/6/bits/shared_ptr_base.h:1192:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::__shared_ptr<_Tp, _Lp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/bits/shared_ptr.h:52:0,
+                 from /usr/include/c++/6/memory:82,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:82,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/shared_ptr_base.h:1197:5: note: candidate: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)
+     operator==(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+     ^~~~~~~~
+/usr/include/c++/6/bits/shared_ptr_base.h:1197:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ is not derived from ‘const std::__shared_ptr<_Tp, _Lp>’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/memory:82:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:82,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/shared_ptr.h:336:5: note: candidate: template<class _Tp1, class _Tp2> bool std::operator==(const std::shared_ptr<_Tp1>&, const std::shared_ptr<_Tp2>&)
+     operator==(const shared_ptr<_Tp1>& __a,
+     ^~~~~~~~
+/usr/include/c++/6/bits/shared_ptr.h:336:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::shared_ptr<_Tp1>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/memory:82:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:82,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/shared_ptr.h:342:5: note: candidate: template<class _Tp> bool std::operator==(const std::shared_ptr<_Tp1>&, std::nullptr_t)
+     operator==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+     ^~~~~~~~
+/usr/include/c++/6/bits/shared_ptr.h:342:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::shared_ptr<_Tp1>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/memory:82:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:82,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/shared_ptr.h:347:5: note: candidate: template<class _Tp> bool std::operator==(std::nullptr_t, const std::shared_ptr<_Tp1>&)
+     operator==(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+     ^~~~~~~~
+/usr/include/c++/6/bits/shared_ptr.h:347:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ is not derived from ‘const std::shared_ptr<_Tp1>’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/vector:64:0,
+                 from /usr/include/c++/6/queue:61,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:86,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_vector.h:1509:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_vector.h:1509:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::vector<_Tp, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/queue:64:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:86,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_queue.h:298:5: note: candidate: template<class _Tp, class _Seq> bool std::operator==(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)
+     operator==(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_queue.h:298:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::queue<_Tp, _Seq>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/set:61:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:87,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_set.h:840:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator==(const set<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_set.h:840:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::set<_Key, _Compare, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/set:62:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:87,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_multiset.h:823:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator==(const multiset<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_multiset.h:823:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::multiset<_Key, _Compare, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/stack:61:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:89,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/stl_stack.h:275:5: note: candidate: template<class _Tp, class _Seq> bool std::operator==(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)
+     operator==(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)
+     ^~~~~~~~
+/usr/include/c++/6/bits/stl_stack.h:275:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::stack<_Tp, _Seq>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/valarray:587:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:95,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/valarray_after.h:414:5: note: candidate: template<class _Dom1, class _Dom2> std::_Expr<std::_BinClos<std::__equal_to, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__equal_to, typename _Dom1::value_type>::result_type> std::operator==(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(==, __equal_to)
+     ^
+/usr/include/c++/6/bits/valarray_after.h:414:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/valarray:587:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:95,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/valarray_after.h:414:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__equal_to, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__equal_to, typename _Dom1::value_type>::result_type> std::operator==(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)
+     _DEFINE_EXPR_BINARY_OPERATOR(==, __equal_to)
+     ^
+/usr/include/c++/6/bits/valarray_after.h:414:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/valarray:587:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:95,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/valarray_after.h:414:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__equal_to, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__equal_to, typename _Dom1::value_type>::result_type> std::operator==(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(==, __equal_to)
+     ^
+/usr/include/c++/6/bits/valarray_after.h:414:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/valarray:587:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:95,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/valarray_after.h:414:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__equal_to, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__equal_to, typename _Dom1::value_type>::result_type> std::operator==(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(==, __equal_to)
+     ^
+/usr/include/c++/6/bits/valarray_after.h:414:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/valarray:587:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:95,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/valarray_after.h:414:5: note: candidate: template<class _Dom> std::_Expr<std::_BinClos<std::__equal_to, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__equal_to, typename _Dom1::value_type>::result_type> std::operator==(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(==, __equal_to)
+     ^
+/usr/include/c++/6/bits/valarray_after.h:414:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:95:0,
+                 from C.cpp:3:
+/usr/include/c++/6/valarray:1179:1: note: candidate: template<class _Tp> std::_Expr<std::_BinClos<std::__equal_to, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__equal_to, _Tp>::result_type> std::operator==(const std::valarray<_Tp>&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(==, __equal_to)
+ ^
+/usr/include/c++/6/valarray:1179:1: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::valarray<_Tp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:95:0,
+                 from C.cpp:3:
+/usr/include/c++/6/valarray:1179:1: note: candidate: template<class _Tp> std::_Expr<std::_BinClos<std::__equal_to, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__equal_to, _Tp>::result_type> std::operator==(const std::valarray<_Tp>&, const _Tp&)
+ _DEFINE_BINARY_OPERATOR(==, __equal_to)
+ ^
+/usr/include/c++/6/valarray:1179:1: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::valarray<_Tp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:95:0,
+                 from C.cpp:3:
+/usr/include/c++/6/valarray:1179:1: note: candidate: template<class _Tp> std::_Expr<std::_BinClos<std::__equal_to, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__equal_to, _Tp>::result_type> std::operator==(const _Tp&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(==, __equal_to)
+ ^
+/usr/include/c++/6/valarray:1179:1: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ is not derived from ‘const std::valarray<_Tp>’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/forward_list:38:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:104,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/forward_list.h:257:5: note: candidate: template<class _Tp> bool std::operator==(const std::_Fwd_list_iterator<_Tp>&, const std::_Fwd_list_const_iterator<_Tp>&)
+     operator==(const _Fwd_list_iterator<_Tp>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/forward_list.h:257:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::_Fwd_list_iterator<_Tp>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/forward_list:40:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:104,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/forward_list.tcc:375:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator==(const std::forward_list<_Tp, _Alloc>&, const std::forward_list<_Tp, _Alloc>&)
+     operator==(const forward_list<_Tp, _Alloc>& __lx,
+     ^~~~~~~~
+/usr/include/c++/6/bits/forward_list.tcc:375:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::forward_list<_Tp, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/random:51:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:108,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/random.tcc:1878:5: note: candidate: template<class _RealType1> bool std::operator==(const std::normal_distribution<_RealType>&, const std::normal_distribution<_RealType>&)
+     operator==(const std::normal_distribution<_RealType>& __d1,
+     ^~~~~~~~
+/usr/include/c++/6/bits/random.tcc:1878:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::normal_distribution<_RealType>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:111:0,
+                 from C.cpp:3:
+/usr/include/c++/6/scoped_allocator:440:5: note: candidate: template<class _OutA1, class _OutA2, class ... _InA> bool std::operator==(const std::scoped_allocator_adaptor<_OutA1, _InA ...>&, const std::scoped_allocator_adaptor<_InnerHead, _InnerTail ...>&)
+     operator==(const scoped_allocator_adaptor<_OutA1, _InA...>& __a,
+     ^~~~~~~~
+/usr/include/c++/6/scoped_allocator:440:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::scoped_allocator_adaptor<_OutA1, _InA ...>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/unordered_map:48:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:117,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/unordered_map.h:1768:5: note: candidate: template<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator==(const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&, const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&)
+     operator==(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/unordered_map.h:1768:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/unordered_map:48:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:117,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/unordered_map.h:1780:5: note: candidate: template<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator==(const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>&, const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>&)
+     operator==(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/unordered_map.h:1780:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/unordered_set:48:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:118,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/unordered_set.h:1411:5: note: candidate: template<class _Value, class _Hash, class _Pred, class _Alloc> bool std::operator==(const std::unordered_set<_Value, _Hash, _Pred, _Alloc>&, const std::unordered_set<_Value, _Hash, _Pred, _Alloc>&)
+     operator==(const unordered_set<_Value, _Hash, _Pred, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/unordered_set.h:1411:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::unordered_set<_Value, _Hash, _Pred, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+In file included from /usr/include/c++/6/unordered_set:48:0,
+                 from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:118,
+                 from C.cpp:3:
+/usr/include/c++/6/bits/unordered_set.h:1423:5: note: candidate: template<class _Value, class _Hash, class _Pred, class _Alloc> bool std::operator==(const std::unordered_multiset<_Value, _Hash, _Pred, _Alloc>&, const std::unordered_multiset<_Value, _Hash, _Pred, _Alloc>&)
+     operator==(const unordered_multiset<_Value, _Hash, _Pred, _Alloc>& __x,
+     ^~~~~~~~
+/usr/include/c++/6/bits/unordered_set.h:1423:5: note:   template argument deduction/substitution failed:
+C.cpp:35:24: note:   mismatched types ‘const std::unordered_multiset<_Value, _Hash, _Pred, _Alloc>’ and ‘int’
+   if(it == st[sid].end()) it = st[sid].begin();
+                        ^
+C.cpp:35:46: error: cannot convert ‘std::set<int>::iterator {aka std::_Rb_tree_const_iterator<int>}’ to ‘int’ in assignment
+   if(it == st[sid].end()) it = st[sid].begin();
+                                              ^
+C.cpp:36:9: error: invalid type argument of unary ‘*’ (have ‘int’)
+   mark[*it] = true;
+         ^~

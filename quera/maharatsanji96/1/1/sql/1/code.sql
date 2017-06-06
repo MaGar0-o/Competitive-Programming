@@ -1,0 +1,9 @@
+-- Section1
+    INSERT INTO STUDENTS VALUES (101, 'Mohammad', 13, 24),  (102, 'Ahmad', 16, 26), (103, 'Saeed', 19, 31), (104, 'Mina', 19, 34),  (105, 'Jafar', 18, 23), (106, 'Ahmad', 16, 26);
+-- Section2
+    UPDATE STUDENTS SET AGE = AGE + 1 WHERE SNAME LIKE "Ahmad";
+-- Section3
+    DELETE FROM STUDENTS WHERE SNAME LIKE "Mostafa";
+-- Section4
+    SELECT SNAME FROM STUDENTS WHERE GRADE > (SELECT MAX(GRADE) FROM STUDENTS WHERE AGE < 28);
+
